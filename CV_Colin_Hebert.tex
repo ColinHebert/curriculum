@@ -1,5 +1,4 @@
 \documentclass[11pt,a4paper]{moderncv}
-\moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 %% Available languages, used to create commands \language
 \usepackage[british,french]{translation}
@@ -10,6 +9,17 @@
 %% Set current language (used to generate the PDF)
 \translation{english}
 %\translation{french}
+
+%%%%%%%%%%%%%%%%%%%%%
+% ModernCV Settings %
+%%%%%%%%%%%%%%%%%%%%%
+%% Theme
+\moderncvtheme[blue]{classic}
+
+%% Set level column to 0.5\maincolumnwidth instead of 0.225\maincolumnwidth
+%% and comment column to 0.5\maincolumnwidth instead of 0.725\maincolumnwidth
+\renewcommand*{\cvlanguage}[3]{%
+    \cvline{#1}{\begin{minipage}[t]{0.5\maincolumnwidth}\textbf{#2}\end{minipage}\hfill\begin{minipage}[t]{0.5\maincolumnwidth}\raggedleft\footnotesize\itshape #3\end{minipage}}}
 
 %%%%%%%%%%%%%%%%%
 % Personal data %
