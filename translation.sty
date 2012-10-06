@@ -46,9 +46,8 @@
 % \translation{french} %% Will print the document with french translations
 %
 \newcommand{\translation}[1]{
-	\edef\@temp{\csname#1@name\endcsname}
 	\AtBeginDocument{
-	\expandafter\expandafter \expandafter\selectlanguage
+	\expandafter\expandafter\expandafter\selectlanguage
 		\expandafter\csname
 			\csname#1@name\endcsname
 		\expandafter\endcsname
