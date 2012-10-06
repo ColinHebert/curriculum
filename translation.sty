@@ -25,6 +25,19 @@
 % \british{Translation}
 %
 
+%% Each language comes with a variable langageName@name (french@name for example)
+%% This variable contains the language name used by babel internally
+%% It is useful to have a language which points to a specific babel languageName
+%% in particular when \translationAlias is used :
+%
+% \usepackage[british,french]{translation}
+% \translationAlias{english}{british} \translationAlias{english}{british}
+%
+% \french@name  %french
+% \british@name %british
+% \english@name %british
+%
+
 \ProvidesPackage{translation}
 
 %% Select document language.
