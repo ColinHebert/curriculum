@@ -62,8 +62,8 @@
 	%% Define the name corresponding to the aliased language (the original name)
 	\expandafter\edef\csname#1@name\endcsname{\csname#2@name\endcsname}
 	%% Define the command corresponding to the aliased language (the original name)
-	\expandafter\newcommand\expandafter{\csname#1\endcsname}[1]{
-        \expandafter\csname#2\endcsname{##1}
+	\expandafter\newcommand\expandafter{\csname#1\endcsname}[1]{%
+        \expandafter\csname#2\endcsname{##1}%
     }
 }
 
