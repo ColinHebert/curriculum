@@ -37,10 +37,29 @@
 %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
+% Atlassian %
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newreplacabledate{experienceStart}{1}{9}{2013}
+\newreplacabledate{experienceEnd}{1}{3}{2014}
+
+\english{
+\cventry{\experienceSpan}{Java developer}{Build Engineering, Atlassian}{Sydney}{Australia}{
+	\begin{itemize}
+		\item Development and maintenance of the Continuous Integration platform
+		\begin{itemize}
+			\item Development of plugins for Bamboo, the CI platform
+            \item Modular project based on Spring, using multiple web frameworks (Struts, Velocity, Wicket, JSF)
+            \item Involvement in the Sakai community and contribution to the main project
+		\end{itemize}
+	\end{itemize}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
 % University of Oxford %
 %%%%%%%%%%%%%%%%%%%%%%%%
 \newreplacabledate{experienceStart}{9}{1}{2012}
-\newreplacabledate{experienceEnd}{1}{1}{1}
+\newreplacabledate{experienceEnd}{31}{7}{2013}
 
 \english{
 \cventry{\experienceSpan}{Java/Sakai developer}{IT Services, University of Oxford}{Oxford}{United Kingdom}{
@@ -56,11 +75,11 @@
 			\item Implementation of the Sakai-Search API using Solr as the back-end search engine
       \item Rewriting of the Sakai-Search API in the project Search2, improving separation between API and implementation to simplify the creation of future implementations
 		\end{itemize}
-		\item Creation of tools allowing the consumption of Sakai APIs by third-party applications
-		\begin{itemize}
-      \item Introduction of OAuth1.0 to Sakai, allowing connections on the behalf of any user
-      \item Improvement of the existing services and creation of new web services
-		\end{itemize}
+%		\item Creation of tools allowing the consumption of Sakai APIs by third-party applications
+%		\begin{itemize}
+%      \item Introduction of OAuth1.0 to Sakai, allowing connections on the behalf of any user
+%      \item Improvement of the existing services and creation of new web services
+%		\end{itemize}
     \item Reengineering of the anti-plagiarism integration within Sakai
     \begin{itemize}
       \item Creation of a Turnitin library, allowing to make calls to the Turnitin API
@@ -84,11 +103,11 @@
 			\item Création d'une implementation de Sakai-Search basée sur Solr comme principal moteur de recherche
       \item Réécriture de l'API Sakai-Search sous le nouveau projet Search2, promouvant une séparation claire entre API et implémentation pour simplifier la création d'autres implémentations
 		\end{itemize}
-		\item Création d'outils permettant l'accès aux API de Sakai par des applications tierces
-		\begin{itemize}
-      \item Ajout du support d'OAuth1.0 à Sakai, permettant d'autres applications de se connecter en tant qu'utilisateurs
-      \item Amélioration de services existants et création de nouveaux services REST
-		\end{itemize}
+%		\item Création d'outils permettant l'accès aux API de Sakai par des applications tierces
+%		\begin{itemize}
+%      \item Ajout du support d'OAuth1.0 à Sakai, permettant d'autres applications de se connecter en tant qu'utilisateurs
+%      \item Amélioration de services existants et création de nouveaux services REST
+%		\end{itemize}
     \item Réécriture de l'intégration des outils anti-plagia dans Sakai
     \begin{itemize}
       \item Création d'une librairie Turnitin permettant de d'appeller l'API de Turnitin
@@ -113,11 +132,11 @@
 			\item Spring IOC, Spring AOP, Spring DAO
 			\item Introduction to RabbitMQ, an AMQP broker, and publication of blog posts on its administration and usage: \httplink[Blog Zenika AMQP (fr)]{blog.zenika.com/index.php?tag/amqp}
 		\end{itemize}
-		\item Participation to the USI challenge: \httplink[Octo - Challenge USI 2011]{sites.google.com/a/octo.com/challengeusi2011/}
-		\begin{itemize}
-			\item Development of an application able to support the load of one million users simultaneously connected, and a total of one billion users registered
-			\item Application using long polling and a data-grid, based on the SpringSource/VMware vFabric stack
-		\end{itemize}
+%		\item Participation to the USI challenge: \httplink[Octo - Challenge USI 2011]{sites.google.com/a/octo.com/challengeusi2011/}
+%		\begin{itemize}
+%			\item Development of an application able to support the load of one million users simultaneously connected, and a total of one billion users registered
+%			\item Application using long polling and a data-grid, based on the SpringSource/VMware vFabric stack
+%		\end{itemize}
 %		\item One of the first developers of DORM, an european projet used to manage dependencies and packages:
 %		\begin{itemize}
 %			\item Integrated CUDF to handle dependencies conflicts.
@@ -143,11 +162,11 @@
 			\item Spring IOC, Spring AOP, Spring DAO
 			\item Étude d'un broker AMQP, RabbitMQ, et publication de blogposts sur son administration et fonctionnement : \httplink[Blog Zenika AMQP (fr)]{blog.zenika.com/index.php?tag/amqp}
 		\end{itemize}
-		\item Participation au concours USI : \httplink[Octo - Concours USI 2011 (fr)]{sites.google.com/a/octo.com/challengeusi2011/}
-		\begin{itemize}
-			\item Création d'une application devant supporter la charge d'un million d'utilisateurs connectés simultanément et un total d'un milliard d'utilisateurs inscrits
-			\item Application utilisant du long-polling et une data-grid, entièrement basée sur la pile applicative SpringSource/VMWare vFabric
-		\end{itemize}
+%		\item Participation au concours USI : \httplink[Octo - Concours USI 2011 (fr)]{sites.google.com/a/octo.com/challengeusi2011/}
+%		\begin{itemize}
+%			\item Création d'une application devant supporter la charge d'un million d'utilisateurs connectés simultanément et un total d'un milliard d'utilisateurs inscrits
+%			\item Application utilisant du long-polling et une data-grid, entièrement basée sur la pile applicative SpringSource/VMWare vFabric
+%		\end{itemize}
 %		\item Participation au développement de DORM, projet européen de gestion de paquets et dépendances :
 %		\begin{itemize}
 %			\item Integration du format CUDF pour la gestion des conflits de dépendances.
@@ -233,7 +252,7 @@
 		\begin{itemize}
 			\item Set up of Central Authentication Service server (CAS, Jasig)
 			\item Creation of a customized connector to LDAP and a MySQL database
-			\item Customisation of GateIn (Exo), Alfresco and Coriolis (Bull) to allow login through the SSO
+%			\item Customisation of GateIn (Exo), Alfresco and Coriolis (Bull) to allow login through the SSO
 		\end{itemize}
 	\end{itemize}
 	Lefebvre's project - Development of a management platform for Congés Spectacle users and clients {\em(1 year and 4 months)}
@@ -255,7 +274,7 @@
 		\begin{itemize}
 			\item Installation d'un Central Authentication Service server (CAS, Jasig)
 			\item Création d'un connecteur personnalisé vers du LDAP et une base de données MyQSL
-			\item Intégration du système de connection dans GateIn (Exo), Alfresco et Coriolis (Bull)
+%			\item Intégration du système de connection dans GateIn (Exo), Alfresco et Coriolis (Bull)
 		\end{itemize}
 	\end{itemize}
 	Projet Lefebvre - Développement d'une plateforme de gestion des adhérents de Congés Spectacles {\em(1 an et 4 mois)}
@@ -264,7 +283,7 @@
 		\begin{itemize}
 			\item Conception de l'application - UML avec Enterprice Architect (Sparx Systems)
 			\item Couches métier et vue - EJB \& Hibernate, JSP \& Struts
-			\item Processus de compilation et déploiement - Ant \& Ivy
+%			\item Processus de compilation et déploiement - Ant \& Ivy
 		\end{itemize}
 	\end{itemize}
 }
